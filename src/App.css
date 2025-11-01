@@ -1,44 +1,5 @@
-pp {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/*allover*/
+/*all  over*/
 
 *{
   scroll-behavior: smooth;
@@ -69,7 +30,7 @@ section {
 /* navbars*/
 
 .navbar {
-  background: #222;
+  background:black;
   color: white;
   padding: 10px 0;
   position: fixed;
@@ -90,9 +51,11 @@ section {
   font-size: 22px;
   font-weight: bold;
 }
-
+.logo:hover{
+  color: rebeccapurple;
+}
 .nav-links {
-  margin-left: 60%;
+  margin-left: 80%;
   list-style: none;
   display: flex;
   gap: 30px;
@@ -106,6 +69,7 @@ section {
 
 .nav-links li a:hover {
   color: rebeccapurple;
+  text-decoration: underline rebeccapurple;
 }
 
 .menu-icon {
@@ -133,9 +97,12 @@ section {
 }
 
 .home-text h1 {
-  color: rebeccapurple;
-  font-size: 2.5rem;
+  color: white;
+  font-size: 4rem;
   margin-bottom: 0.2rem;
+}
+.home-text h1:hover{
+  color: rebeccapurple;
 }
 
 .home-text .tagline {
@@ -151,10 +118,15 @@ section {
   line-height: 1.6;
 }
 
+.buttons{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
 .btn {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background: indigo;
+  background:rebeccapurple;
   color: #fff;
   text-decoration: none;
   border-radius: 20px;
@@ -455,6 +427,7 @@ margin-top: 0;
   color: rebeccapurple;
 }
 
+
 /* Social Media Links */
 
 .social-links {
@@ -545,8 +518,13 @@ margin-top: 0;
     font-size: 2rem;
   }
 
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .profile-pic {
-    margin-top: 22.5%;
+    margin-top: 40%;
     width: 200px;
     height: 200px;
     margin-left: -20px;
@@ -565,6 +543,7 @@ margin-top: 0;
   .about-pic {
     width: 200px;
     height: 200px;
+    margin-top: -50%;
   }
 
   .about-text {
@@ -584,6 +563,9 @@ margin-top: 0;
   }
 
   /* skills*/
+  .skills{
+    margin-top:-25%;
+  }
   .skills-list {
     justify-content: center;
     gap: 20px;

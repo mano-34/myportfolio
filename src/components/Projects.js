@@ -8,7 +8,7 @@ export default function Projects() {
       link: "https://portfolio-mano15.vercel.app/"
     },
     { 
-      name: "E-commerce Store (SpeedX Bike Website)", 
+      name: "E-commerce Store Design (SpeedX Bike Website)", 
       desc: "An e-commerce project designed for selling bikes online with a responsive layout, product pages, and modern UI components. Built using with HTML,CSS,javascript.",
       link: "https://mano-34.github.io/SPEEDxBikeWebsite/"  
     },
