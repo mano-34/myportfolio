@@ -1,10 +1,12 @@
 import React from "react";
-import about from "../assets/profile.jpg";
-import { FaLinkedin, FaInstagram, FaXTwitter } from "react-icons/fa6";
+import about from "../assets/manodp.jpg";
+import { FaLinkedin, FaEnvelope, FaGithub } from "react-icons/fa6";
 export default function About() {
   return (
     <section id="about" className="about">
+    <div className="about-img">
       <img src={about} alt="about" className="about-pic" />
+    </div>
       <div className="about-text">
         <h2>About Me</h2>
         <p>
@@ -15,11 +17,11 @@ export default function About() {
           <a href="https://linkedin.com/in/mano305" target="_blank" rel="noreferrer">
             <FaLinkedin size={20} />
           </a>
-          <a href="https://instagram.com/in/__man_oo" target="_blank" rel="noreferrer">
-            <FaInstagram size={20} />
+          <a href="mailto:manojkumar15112004@email.com" target="_blank" rel="noreferrer">
+            <FaEnvelope size={20} />
           </a>
-          <a href="https://x.com" target="_blank" rel="noreferrer">
-            <FaXTwitter size={20} />
+          <a href="https://github.com/mano-34" target="_blank" rel="noreferrer">
+            <FaGithub size={20} />
           </a>
         </div>
       </div>

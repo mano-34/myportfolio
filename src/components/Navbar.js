@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <h1 className="logo">MyPortfolio</h1>
+        <h1 className="logo">Portfolio</h1>
         <ul className={open ? "nav-links active" : "nav-links"}>
           {["Home", "About", "Skills", "Projects", "Contact"].map((link) => (
             <li key={link}>
