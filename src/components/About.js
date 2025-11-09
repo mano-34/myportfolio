@@ -4,7 +4,9 @@ import { FaLinkedin, FaEnvelope, FaGithub } from "react-icons/fa6";
 export default function About() {
   return (
     <section id="about" className="about">
+    <div className="about-img">
       <img src={about} alt="about" className="about-pic" />
+    </div>
       <div className="about-text">
         <h2>About Me</h2>
         <p>
