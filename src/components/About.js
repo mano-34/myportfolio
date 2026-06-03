@@ -4,10 +4,10 @@ import { FaLinkedin, FaEnvelope, FaGithub } from "react-icons/fa6";
 export default function About() {
   return (
     <section id="about" className="about">
-    <div className="about-img">
+    <div className="about-img scroll-left">
       <img src={about} alt="about" className="about-pic" />
     </div>
-      <div className="about-text">
+      <div className="about-text scroll-right">
         <h2>About Me</h2>
         <p>
           I'm a passionate <span class="highlight">Full-Stack Web Developer</span> , skilled in <span class="highlight">HTML, CSS, JavaScript, React.js, Node.js, Express.js, and MongoDB.</span> I specialize in creating responsive, dynamic, and user-friendly web applications , With a solid foundation in both front-end and back-end technologies , Confident in my problem-solving skills, adaptability, and continuous learning mindset , I am dedicated to delivering clean, efficient, and innovative code that drives real business value.

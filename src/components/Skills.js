@@ -1,13 +1,6 @@
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaReact,
-  FaNodeJs,
-  FaGithub,
-} from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub, } from "react-icons/fa";
 import { SiExpress, SiMongodb } from "react-icons/si";
-
+import { motion } from "framer-motion";
 
 export default function Skills() {
   const skills = [
@@ -60,29 +53,56 @@ export default function Skills() {
       desc: ["Cloud-based code hosting", "Collaboration & open-source tools"],
     },
   ];
-
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.15,
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    }),
+  };
   return (
     <section id="skills" className="skills-section">
       <h2> Skills</h2>
 
       <div className="skills-grid">
         {skills.map((skill, i) => (
-          <div key={i} className="skill-card">
+          <motion.div
+            key={i}
+            className="skill-card"
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            custom={i}
+          >
             <div className="outer-circle">
-              <div
+              <motion.div
                 className="inner-circle"
-                style={{
+                initial={{ background: `conic-gradient(#59b2f4 0deg, #2e3553 0deg)` }}
+                whileInView={{
                   background: `conic-gradient(#59b2f4 ${skill.level * 3.6}deg, #2e3553 0deg)`,
                 }}
+                transition={{ duration: 1.2, ease: "easeInOut" }}
               >
-                <div className="skill-icon">{skill.icon}</div>
-              </div>
+                <motion.div
+                  className="skill-icon"
+                  whileHover={{ scale: 1.3 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 15 }}
+                >
+                  {skill.icon}
+                </motion.div>
+              </motion.div>
             </div>
 
             <h3>{skill.name}</h3>
             <p className="desc-line">{skill.desc[0]}</p>
             <p className="desc-line">{skill.desc[1]}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

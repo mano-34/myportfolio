@@ -1,14 +1,14 @@
 import React from "react";
 import { FaLinkedin, FaEnvelope, FaGithub } from "react-icons/fa6";
 import profile from "../assets/manodp.jpg";
-import resume from "../assets/Resume.mano.pdf"; 
+import resume from "../assets/manojkumar.resume.pdf"; 
 
 export default function Home() {
   return (
     <section id="home" className="home">
-      <div className="home-text">
+      <div className="home-text scroll-left">
         <h1>Manojkumar R</h1>
-        <p className="tagline">I'm a MERN Stack Developer</p>
+        <p className="tagline">I'm MERN Stack Developer</p>
 
         <ul className="points">
           <li>Specialized in building responsive and user-friendly websites.</li>
@@ -32,7 +32,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="home-image">
+      <div className="home-image scroll-right">
         <img src={profile} alt="Profile" className="profile-pic" />
       </div>
     </section>
